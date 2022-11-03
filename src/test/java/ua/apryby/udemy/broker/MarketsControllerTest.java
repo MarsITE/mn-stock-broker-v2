@@ -10,6 +10,7 @@ import javax.inject.Inject;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+import static io.micronaut.http.HttpRequest.GET;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -32,5 +33,4 @@ class MarketsControllerTest {
                 .extracting(entry -> entry.get("value"))
                 .containsExactlyInAnyOrder("AAPL", "AMZN", "FB", "GOOG", "MSFT", "NFLX", "TSLA");
     }
-
 }

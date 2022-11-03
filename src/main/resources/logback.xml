@@ -9,6 +9,8 @@
         </encoder>
     </appender>
 
+    <Logger name="ua.apryby.udemy" level="DEBUG"/>
+
     <root level="info">
         <appender-ref ref="STDOUT" />
     </root>
